@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
+body,
+html {
+    font-family: 'Fredoka One', cursive;
+    color: #ff6347;
+    /* text-shadow: 2px 2px 0 #000, 4px 4px 0 #ffa500; */
+    /* font-size: 2rem; */
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+
+}
+
+img {
+    position: absolute;
+    top: 10rem;
+    left: 10rem;
+}
+
+.bg {
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+.santa {
+    width: 50rem;
+    height: auto;
+    left: 50%;
+    bottom: 0%;
+    transform: translateX(-50%);
+    z-index: 10;
+    animation: 2s slideUp ease-out forwards;
+    --position-top: 30%;
+}
+
+.title {
+    width: 66vw;
+    height: auto;
+    left: 50%;
+    bottom: 0%;
+    transform: translateX(-50%);
+    z-index: 10;
+    animation: 2s slideUp ease-out forwards;
+    --position-top: 10%;
+}
+
+.deer {
+    width: 50rem;
+    height: auto;
+    left: 50%;
+    bottom: 0%;
+    transform: translateX(-40%);
+    z-index: 9;
+    animation: 2s slideUp ease-out forwards;
+    --position-top: 30%;
+}
+
+.elf {
+    width: 50rem;
+    height: auto;
+    left: 50%;
+    bottom: 0%;
+    transform: translateX(-60%);
+    z-index: 9;
+    animation: 2s slideUp ease-out forwards;
+    --position-top: 30%;
+}
+
+.sledge {
+    width: 50rem;
+    height: auto;
+    left: 50%;
+    bottom: 0%;
+    transform: translateX(-120%);
+    z-index: 8;
+    animation: 2s slideUp ease-out forwards;
+    --position-top: 40%;
+}
+
+@keyframes slideUp {
+    0% {
+        top: 100%;
+    }
+
+    100% {
+        top: var(--position-top);
+    }
+}
+
+.social {
+    position: fixed;
+    display: flex;
+    width: auto;
+    height: auto;
+    right: 5%;
+    top: 5%;
+    z-index: 20;
+    gap: 1rem;
+}
+
+svg {
+    width: 2rem;
+    height: 2rem;
+    background-color: white;
+    padding: 6px;
+    border-radius: 5px;
+    transition: transform 0.2s;
+}
+
+svg:hover {
+    transform: scale(1.2);
+}
+
+.contact {
+    position: fixed;
+    z-index: 40;
+    left: 0;
+    bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 1rem;
+    border-radius: 0rem 1rem 1rem 0rem;
+    font-weight: bold;
+    color: black;
+    background-color: #FFCF5F;
+}
+
+.speakToSanta {
+    position: fixed;
+    bottom: 1rem;
+    border-radius: 1rem 0 0 1rem;
+    right: 0%;
+    /* transform: translateX(-50%); */
+    padding: 1rem;
+    font-size: 2rem;
+    z-index: 50;
+    /* animation: 2s slideUp ease-out forwards; */
+    /* --position-top: 40%; */
+}
+
+a {
+    text-decoration: none;
+    font-family: "Fredoka One";
+    color: black;
+    background-color: #FFCF5F;
+    /* Removes underline */
+    /* Inherits color from parent */
+}
